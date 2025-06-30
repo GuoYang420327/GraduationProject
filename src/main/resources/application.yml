@@ -1,0 +1,23 @@
+server:
+  port: 8080 #端口号
+
+spring:
+  application:
+    name: GraduationProject #应用名称
+
+  datasource: #数据库连接
+    url: jdbc:mysql://localhost:3306/graduation_project?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    username: root
+    password: 420327
+    driver-class-name: com.mysql.cj.jdbc.Driver #驱动
+
+  neo4j: #neo4j数据库连接
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: gy420327
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和下划线命名的自动转换
